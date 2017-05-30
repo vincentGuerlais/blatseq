@@ -12,6 +12,9 @@ import sys
 def getHelp() :
 	print """blatSeq help
 	Usage : python blatSeq.py input_file output_file database_file
+
+	BLATseq uses BLAT to regroup transcripts sharing the same positions on a
+	reference transcriptome. They are then sorted by groups (genes).
 	
 	if you don't want to do the BLAT, replace the database_file by --noBLAT
 	your txt file should be named output_file.txt and be in the same folder though
@@ -184,7 +187,7 @@ def createFastaFile(geneList,fastaContent,outputFile) :
 ####################
 
 #printing a line to know that the programm is running. to be removed ?
-print "running blatSeq0.2"
+print "running blatSeq0.3"
 
 if dbFileName != "--noBLAT" :
 	print "BLAT"
