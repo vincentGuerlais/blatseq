@@ -96,7 +96,7 @@ def createGeneList(txtFile) :
 			lastQname = Qname[:]
 		
 			#strand is concatenated to the scaffold to allow only one test
-			if line[8] > line[9] :
+			if int(line[8]) > int(line[9]) :
 				scaffold = line[1] + "-"
 			else :
 				scaffold = line[1] + "+"
