@@ -101,8 +101,8 @@ def createGeneList(txtFile) :
 			else :
 				scaffold = line[1] + "+"
 			#both are changed to integers to allow mathematical operations
-			matchStart = int(line[15])
-			matchEnd = int(line[16])
+			matchStart = int(line[8])
+			matchEnd = int(line[9])
 
 			
 			#if scaffold already exists
